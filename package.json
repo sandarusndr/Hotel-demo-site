@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "npm --prefix my-hotel-project run dev",
+    "dev:3001": "npm --prefix my-hotel-project run dev:3001",
+    "build": "npm --prefix my-hotel-project run build",
+    "start": "npm --prefix my-hotel-project run start",
+    "lint": "npm --prefix my-hotel-project run lint"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.26",
+    "lucide-react": "^0.562.0",
+    "tailwind-merge": "^3.4.0"
+  }
+}
