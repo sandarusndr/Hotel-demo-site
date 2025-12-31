@@ -1,0 +1,5 @@
+{
+  "installCommand": "npm --prefix my-hotel-project install",
+  "buildCommand": "npm --prefix my-hotel-project run build",
+  "devCommand": "npm --prefix my-hotel-project run dev"
+}
