@@ -4,7 +4,8 @@
     "dev:3001": "npm --prefix my-hotel-project run dev:3001",
     "build": "npm --prefix my-hotel-project run build",
     "start": "npm --prefix my-hotel-project run start",
-    "lint": "npm --prefix my-hotel-project run lint"
+    "lint": "npm --prefix my-hotel-project run lint",
+    "postinstall": "npm --prefix my-hotel-project install"
   },
   "dependencies": {
     "clsx": "^2.1.1",
