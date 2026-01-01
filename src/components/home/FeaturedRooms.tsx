@@ -1,7 +1,7 @@
 import Link from "next/link";
 
-import RoomCard from "../rooms/RoomCard";
-import { rooms } from "../../lib/data";
+import RoomCard from "@/components/rooms/RoomCard";
+import { rooms } from "@/lib/data";
 
 export default function FeaturedRooms() {
   const featuredRooms = rooms.filter((r) => r.featured).slice(0, 3);

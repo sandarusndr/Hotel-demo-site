@@ -1,6 +1,6 @@
 import Link from "next/link";
-import type { Room } from "../../lib/types";
-import { formatCurrency } from "../../lib/utils";
+import type { Room } from "@/lib/types";
+import { formatCurrency } from "@/lib/utils";
 
 export default function RoomCard({ room }: { room: Room }) {
   return (

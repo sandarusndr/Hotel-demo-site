@@ -10,6 +10,7 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 export const metadata: Metadata = {
   title: "The Grand Stay | Luxury Hotel",
   description: "Experience the pinnacle of luxury and comfort.",
+
 };
 
 export default function RootLayout({
