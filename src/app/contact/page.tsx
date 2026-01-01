@@ -25,9 +25,9 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-          {/* Form card */}
-          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl">
+        <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+          {/* Form card (sticky on desktop) */}
+          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl lg:sticky lg:top-28">
             <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.08),transparent_35%),radial-gradient(circle_at_80%_0%,rgba(255,255,255,0.06),transparent_30%)]" />
             <form className="relative p-6 sm:p-8 space-y-5">
               <div className="grid gap-4 sm:grid-cols-2">
