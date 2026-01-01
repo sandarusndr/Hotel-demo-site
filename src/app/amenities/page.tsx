@@ -128,20 +128,20 @@ export default function AmenitiesPage() {
                       key={title}
                       className="group relative overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/50 p-8 transition-all duration-500 hover:border-zinc-600 hover:shadow-2xl"
                     >
-                      {/* 1. The Image Layer (Slides up from bottom) */}
-                      <div className="absolute inset-0 z-0 translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0">
+                      {/* 1. The Image Layer: visible by default on touch, hover-reveal on desktop */}
+                      <div className="absolute inset-0 z-0 translate-y-0 md:translate-y-full transition-transform duration-500 ease-out md:group-hover:translate-y-0">
                         <Image
                           src={image}
                           alt={title}
                           fill
-                          className="object-cover transition-transform duration-700 group-hover:scale-110"
+                          className="object-cover transition-transform duration-700 md:group-hover:scale-110"
                         />
                         {/* Dark Gradient Overlay for text readability */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />
                       </div>
 
                       {/* 2. Content Layer */}
-                      <div className="relative z-10 flex flex-col items-start gap-4 transition-transform duration-500 group-hover:-translate-y-2">
+                      <div className="relative z-10 flex flex-col items-start gap-4 transition-transform duration-500 md:group-hover:-translate-y-2">
                         {/* Icon Box */}
                         <div className="shrink-0 rounded-xl border border-white/10 bg-white/5 p-3 backdrop-blur-md transition-colors duration-300 group-hover:border-yellow-500/50 group-hover:bg-yellow-500/20">
                           <Icon className="h-6 w-6 text-yellow-500 transition-colors group-hover:text-yellow-400" />
