@@ -9,6 +9,9 @@ import {
   Wifi,
 } from "lucide-react";
 
+const HERO_BLUR =
+  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR4nGP4z8DwHwAFgwJ/l9Bq1wAAAABJRU5ErkJggg==";
+
 const amenityGroups = [
   {
     label: "Wellness",
@@ -85,6 +88,9 @@ export default function AmenitiesPage() {
                 src="/images/hero-bg.jpg"
                 alt="Amenities"
                 fill
+                sizes="100vw"
+                placeholder="blur"
+                blurDataURL={HERO_BLUR}
                 className="object-cover opacity-60"
                 priority
               />
