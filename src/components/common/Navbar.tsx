@@ -38,20 +38,23 @@ export default function Navbar() {
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-8">
-            <Link href="/" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">
-              Home
+            <Link href="/" className="relative text-sm font-medium text-zinc-300 hover:text-white transition-colors">
+              <span className="hover:underline underline-offset-8 decoration-yellow-500/70">Home</span>
             </Link>
-            <Link href="/rooms" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">
-              Rooms
+            <Link href="/rooms" className="relative text-sm font-medium text-zinc-300 hover:text-white transition-colors">
+              <span className="hover:underline underline-offset-8 decoration-yellow-500/70">Rooms</span>
             </Link>
-            <Link href="/amenities" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">
-              Amenities
+            <Link href="/amenities" className="relative text-sm font-medium text-zinc-300 hover:text-white transition-colors">
+              <span className="hover:underline underline-offset-8 decoration-yellow-500/70">Amenities</span>
+            </Link>
+            <Link href="/contact" className="relative text-sm font-medium text-zinc-300 hover:text-white transition-colors">
+              <span className="hover:underline underline-offset-8 decoration-yellow-500/70">Contact</span>
             </Link>
             <Link
-              href="/rooms"
-              className="bg-white text-black px-5 py-2 rounded-full text-sm font-bold hover:bg-yellow-500 transition-colors"
+              href="/contact"
+              className="bg-gradient-to-r from-yellow-400 to-amber-500 text-black px-5 py-2 rounded-full text-sm font-bold shadow-lg shadow-amber-500/30 hover:brightness-110 transition-all"
             >
-              Book Now
+              Book a Call
             </Link>
           </div>
 
@@ -67,10 +70,18 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="absolute top-full left-0 w-full bg-black/95 backdrop-blur-xl border-b border-zinc-800 p-6 md:hidden flex flex-col gap-6 items-center z-40">
+        <div className="absolute top-full left-0 w-full bg-black/95 backdrop-blur-xl border-b border-zinc-800 p-6 md:hidden flex flex-col gap-5 items-center z-40">
            <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-lg text-white">Home</Link>
            <Link href="/rooms" onClick={() => setIsMobileMenuOpen(false)} className="text-lg text-white">Rooms</Link>
            <Link href="/amenities" onClick={() => setIsMobileMenuOpen(false)} className="text-lg text-white">Amenities</Link>
+           <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="text-lg text-white">Contact</Link>
+           <Link
+             href="/contact"
+             onClick={() => setIsMobileMenuOpen(false)}
+             className="mt-2 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-yellow-400 to-amber-500 px-6 py-2 text-sm font-semibold text-black shadow-lg shadow-amber-500/30"
+           >
+             Book a Call
+           </Link>
         </div>
       )}
     </nav>
