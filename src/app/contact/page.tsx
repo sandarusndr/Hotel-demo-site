@@ -4,7 +4,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="relative overflow-hidden bg-zinc-950 py-16">
+    <div className="relative overflow-clip bg-zinc-950 py-16">
       {/* background accents */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-10 -left-20 h-72 w-72 rounded-full bg-yellow-500/10 blur-3xl" />
@@ -27,7 +27,7 @@ export default function ContactPage() {
 
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
           {/* Form card (sticky on desktop) */}
-          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl lg:sticky lg:top-24 lg:max-h-[calc(100vh-6rem)] lg:overflow-auto">
+          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl lg:sticky lg:top-24 lg:self-start lg:max-h-[calc(100vh-6rem)] lg:overflow-auto">
             <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.08),transparent_35%),radial-gradient(circle_at_80%_0%,rgba(255,255,255,0.06),transparent_30%)]" />
             <form className="relative p-6 sm:p-8 space-y-6">
               <div className="grid gap-4 sm:grid-cols-2">

@@ -50,13 +50,13 @@ export default function Navbar() {
             <Link href="/contact" className="relative text-sm font-medium text-zinc-300 hover:text-white transition-colors">
               <span className="hover:underline underline-offset-8 decoration-yellow-500/70">Contact</span>
             </Link>
+          </div>
             <Link
               href="/contact"
               className="bg-gradient-to-r from-yellow-400 to-amber-500 text-black px-5 py-2 rounded-full text-sm font-bold shadow-lg shadow-amber-500/30 hover:brightness-110 transition-all"
             >
               Book a Call
             </Link>
-          </div>
 
           {/* Mobile Menu Toggle */}
           <button
